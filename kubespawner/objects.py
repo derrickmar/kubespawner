@@ -55,6 +55,9 @@ def make_pod_spec(
             'name': name,
         },
         'spec': {
+            'securityContext': {
+                'fsGroup': 100,
+            },
             'containers': [
                 {
                     'name': 'notebook',
