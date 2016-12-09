@@ -57,6 +57,8 @@ def make_pod_spec(
         'spec': {
             'securityContext': {
                 'fsGroup': 100,
+                'runAsUser': 1000,
+                'runAsNonRoot': true,
             },
             'containers': [
                 {
